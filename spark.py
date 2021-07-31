@@ -19,7 +19,7 @@ spark = SparkSession.builder\
 bucket = "dataproc-testing-pyspark"
 spark.conf.set('temporaryGcsBucket', bucket)
 df = spark.read.format('com.google.cloud.spark.bigquery') \
-      .option('table', 'silver-argon-320416:titanic.titanic_initial') \
+      .option('table', 'silver-argon-320416:GermanCredit.German_Credit_initial') \
       .load()
 
 # Filtering data where Value is invalid
@@ -70,4 +70,4 @@ df = df.drop('ver2')
 df = df.drop('Purpose')
 df = df.drop('Existing_account')
 
-df.write.format('com.google.cloud.spark.bigquery').option('table', 'titanic.titanic_final').mode('append').save()
+df.write.format('com.google.cloud.spark.bigquery').option('table', 'GermanCredit.German_Credit_final').mode('append').save()
