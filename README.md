@@ -1,12 +1,11 @@
-# Batch Processing using Dataproc
-This is one of the part of **Introduction to Dataproc using PySpark** Repository. Here we will try to learn basics of Apache Spark to create **Batch** jobs. Here We will learn step by step how to create a batch job using [Titanic Dataset](https://www.kaggle.com/c/titanic). The complete process is divided into 4 parts:
+# Loading data from one Bigquery dataset to another using Dataproc
+This is one of the part of **Introduction to Dataproc using PySpark** Repository. Here we will try to learn basics of Apache Spark to create **Batch** job to lead a Bigquery table by fetching data from another Bigquery table and transforming it as per our requirement. Here We will learn step by step how to create a batch job using [German Credit Risk](https://www.kaggle.com/uciml/german-credit). The complete process is divided into 5 parts:
 
 1. **Creating a Dataproc Cluster**
 2. **Creating a Dataproc Job**
-3. **Reading from a File in Google Cloud Storage**
-4. **Printing few records**
+3. **Reading data a Bigquery dataset**
+4. **Performing certain Transforms**
 5. **Storing the Records in Bigquery**
-
 
 ## Motivation
 For the last two years, I have been part of a great learning curve wherein I have upskilled myself to move into a Machine Learning and Cloud Computing. This project was practice project for all the learnings I have had. This is first of the many more to come. 
@@ -26,20 +25,20 @@ For the last two years, I have been part of a great learning curve wherein I hav
 
 ```bash
     # clone this repo:
-    git clone https://github.com/adityasolanki205/Batch-Processing-using-Dataproc.git
+    git clone https://github.com/adityasolanki205/Loading-data-from-Bigquery-to-Bigquery-using-Dataproc.git
 ```
 
 ## Job Construction
 
 Below are the steps to setup the enviroment and run the codes:
 
-1. **Setup**: First we will have to setup free google cloud account which can be done [here](https://cloud.google.com/free). Then we need to Download the data from [Titanic Dataset](https://www.kaggle.com/c/titanic/data). It will include 2 csv files, train.csv and test.csv. We will rename either of the files as titanic.csv. 
+1. **Setup**: First we will have to setup free google cloud account which can be done [here](https://cloud.google.com/free). Then we need to Download the data from [German Credit Risk](https://www.kaggle.com/uciml/german-credit). Included in the input folder. 
 
 2. **Cloning the Repository to Cloud SDK**: We will have to copy the repository on Cloud SDK using below command:
 
 ```bash
     # clone this repo:
-    git clone https://github.com/adityasolanki205/Batch-Processing-using-Dataproc.git
+    git clone https://github.com/adityasolanki205/Loading-data-from-Bigquery-to-Bigquery-using-Dataproc.git
 ```
 
 3. **Creating a Dataproc cluster**: Now we create a dataproc cluster to run Pyspark Jobs. The simple command to create a basic cluster is given below.
@@ -100,7 +99,7 @@ The output will be available inside one of the buckets and is attached here by t
 To test the code we need to do the following:
 
     1. Copy the repository in Cloud SDK using below command:
-        git clone https://github.com/adityasolanki205/Read-file-from-GCS-using-Dataproc.git
+        git clone https://github.com/adityasolanki205/Loading-data-from-Bigquery-to-Bigquery-using-Dataproc.git
     
     2. Create a US Multiregional Storage Bucket by the name dataproc-testing-pyspark.
     
