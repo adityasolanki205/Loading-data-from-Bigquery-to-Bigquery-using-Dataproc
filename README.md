@@ -3,7 +3,7 @@ This is one of the part of **Introduction to Dataproc using PySpark** Repository
 
 1. **Creating a Dataproc Cluster**
 2. **Creating a Dataproc Job**
-3. **Reading data a Bigquery dataset**
+3. **Reading data from a Bigquery dataset**
 4. **Performing certain Transforms**
 5. **Storing the Records in Bigquery**
 
