@@ -66,4 +66,5 @@ df = df.drop('ver2')
 df = df.drop('Purpose')
 df = df.drop('Existing_account')
 
+#Saving the data in Bigquery Table
 df.write.format('com.google.cloud.spark.bigquery').option('table', 'GermanCredit.German_Credit_final').mode('append').save()
