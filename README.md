@@ -236,30 +236,30 @@ To test the code we need to do the following:
     5. Create a another Biquery table named German_Credit_final. This should be an empty table with
        schema as given below:
        
-       Duration_month:INTEGER,
-       Credit_history:STRING,
-       Credit_amount:FLOAT,
-       Saving:STRING,
-       Employment_duration:STRING,
-       Installment_rate:INTEGER,
-       Personal_status:STRING,
-       Debtors:STRING,
-       Residential_Duration:INTEGER,
-       Property:STRING,
-       Age:INTEGER,
-       Installment_plans:STRING,
-       Housing:STRING,
-       Number_of_credits:INTEGER,
-       Job:STRING,
-       Liable_People:INTEGER,
-       Telephone:STRING,
-       Foreign_worker:STRING,
-       Classification:INTEGER,
-       Month:STRING,
-       Days:STRING,
-       File_month:STRING,
-       Version:STRING
-    
+        Duration_month:INTEGER,
+        Credit_history:STRING,
+        Credit_amount:FLOAT,
+        Saving:STRING,
+        Employment_duration:STRING,
+        Installment_rate:INTEGER,
+        Personal_status:STRING,
+        Debtors:STRING,
+        Residential_Duration:INTEGER,
+        Property:STRING,
+        Age:INTEGER,
+        Installment_plans:STRING,
+        Housing:STRING,
+        Number_of_credits:INTEGER,
+        Job:STRING,
+        Liable_People:INTEGER,
+        Telephone:STRING,
+        Foreign_worker:STRING,
+        Classification:INTEGER,
+        Month:STRING,
+        Days:STRING,
+        File_month:STRING,
+        Version:STRING
+
     6. Create a Dataproc cluster by using the command:
         gcloud dataproc clusters create ${CLUSTER} \
         --project=${PROJECT} \
